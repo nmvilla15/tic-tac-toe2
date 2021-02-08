@@ -20,23 +20,25 @@ public class TicTacToeClass
     // Accessor Methods
 
     public boolean isWinner( char p ){
-        if(p == board[0][0] && p == board[0][1] && p == board[0][2])
+        if (board[0][0] == p && board[0][1] == p && board[0][2] == p){
             return true;
-        if(p == board[1][0] && p == board [1][1] && p == board[1][2])
+        } else if (board[1][0] == p && board[1][1] == p && board[1][2] == p) {
             return true;
-        if(p == board[2][0] && p == board[2][1] && p == board [2][2])
+        } else if (board[2][0] == p && board[2][1] == p && board[2][2] == p) {
             return true;
-        if(p == board[0][0] && p == board[1][0] & p == board [2][0])
+        } else if (board[0][0] == p && board[1][0] == p && board[2][0] == p) {
             return true;
-        if(p == board[0][1] && p == board[1][1] && p == board[2][1])
+        } else if (board[0][1] == p && board[1][1] == p && board[2][1] == p) {
             return true;
-        if(p == board[0][2] && p == board [1][2] & p == board[2][2])
+        } else if (board[0][2] == p && board[1][2] == p && board[2][2] == p) {
             return true;
-        if(p == board[0][0] && p == board[1][1] && p == board[2][2])
+        } else if (board[0][0] == p && board[1][1] == p && board[2][2] == p) {
             return true;
-        if(p == board[2][0] && p == board [1][1] && p == board[0][2])
+        } else if (board[2][0] == p && board[1][1] == p && board[0][2] == p) {
             return true;
-        return false;
+        } else {
+            return false;
+        }
     }
 
     public boolean isFull() {
